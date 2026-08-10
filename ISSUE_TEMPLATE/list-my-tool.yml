@@ -1,0 +1,69 @@
+name: List my tool in awesome-gaia
+description: Propose a tool for the curated index. This is level 0 — it needs nobody's permission beyond this issue or a pull request.
+title: "[list] <tool name>"
+labels: ["awesome-gaia", "level-0"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Listing is a recommendation by us, not a maintenance promise. We curate and we check
+        the link; we do not commit to fixing your bugs or shipping your releases. Higher
+        levels — containerised, demonstrated, benchmarked, adopted — are each agreed
+        separately. See [How outside work joins GAIA](https://gaia-hazlab.github.io/book/organization).
+
+        You can also just open a pull request against `awesome-gaia` and skip this form.
+
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What it is for
+      description: One or two sentences on what a user would reach for it to do — not what it is built with.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Closest category
+      options:
+        - Data access or catalogues
+        - Models (weather, hazard, surface process)
+        - Evaluation and benchmarking
+        - Agents and LLM tooling
+        - Workflow, containers, compute
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: The two things curation checks
+      options:
+        - label: The repository has an open-source LICENSE file
+          required: true
+        - label: It has seen a commit in the last two years
+          required: true
+
+  - type: textarea
+    id: interest
+    attributes:
+      label: Interested in going further? (optional)
+      description: >-
+        If you would like a container image, a template workflow, or an evaluation task built
+        around this tool, say so. Each of those is a commitment by us, so it is a
+        conversation rather than a checkbox — but this is where it starts.

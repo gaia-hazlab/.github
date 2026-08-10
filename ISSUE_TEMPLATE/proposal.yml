@@ -1,0 +1,38 @@
+name: Proposal
+description: Propose a change in direction, an interface, or a decision that constrains later choices.
+title: "[proposal] "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this constrains later choices, it will end up as a numbered entry in the
+        [decisions register](https://gaia-hazlab.github.io/book/decisions) — which means the
+        reasoning and the rejected alternatives matter as much as the proposal itself. A
+        decision with no recorded alternatives gets reopened by whoever arrives next.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+      description: In two or three sentences, in the present tense.
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The reasoning someone will need in two years when they ask why.
+    validations: {required: true}
+  - type: textarea
+    id: rejected
+    attributes:
+      label: Alternatives considered, and why not
+    validations: {required: true}
+  - type: textarea
+    id: obligates
+    attributes:
+      label: What this obligates us to
+      description: Concrete follow-on work, maintenance commitments, or things that must change elsewhere.
+  - type: textarea
+    id: open
+    attributes:
+      label: Deliberately left unanswered

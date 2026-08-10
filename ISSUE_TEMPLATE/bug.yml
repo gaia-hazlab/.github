@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in a GAIA repository does not work as documented.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A container image that is behind on a dependency or a security update counts as a bug,
+        and it is the failure mode we most want reported.
+  - type: input
+    id: repo
+    attributes:
+      label: Which repository
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: Commands, environment, and the smallest input that shows the problem.
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python version, and how you installed it (pixi, pip, container image tag).
