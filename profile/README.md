@@ -37,7 +37,7 @@ Fund for Future Science and Technology and the Jerome and Linda Paros Geohazard 
 
 ## How to read this organisation
 
-Twenty-five repositories is already too many to browse. At least four GitHub topics on every
+Thirty-four repositories is already too many to browse. At least four GitHub topics on every
 public repository make the collection readable without anyone maintaining a list by hand.
 
 | Axis | Values | Rule |
