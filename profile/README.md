@@ -37,7 +37,7 @@ Fund for Future Science and Technology and the Jerome and Linda Paros Geohazard 
 
 ## How to read this organisation
 
-Twenty-five repositories is already too many to browse. At least four GitHub topics on every
+Thirty-four repositories is already too many to browse. At least four GitHub topics on every
 public repository make the collection readable without anyone maintaining a list by hand.
 
 | Axis | Values | Rule |
@@ -46,7 +46,7 @@ public repository make the collection readable without anyone maintaining a list
 | **Category** | `gaia-coordination` · `gaia-data` · `gaia-agent` · `gaia-eval` · `gaia-science` · `gaia-template` · `gaia-container` | exactly one |
 | **Relationship** | `gaia-core`, or `gaia-level-1` … `gaia-level-4` | exactly one |
 | **Maturity** | `gaia-stable` · `gaia-incubating` · `gaia-archived` | exactly one |
-| **Provisioning** | `gaia-hpc` · `gaia-cloud` · `gaia-hybrid` · `gaia-agent-api` | at most one of hpc/cloud/hybrid; `gaia-agent-api` is independent |
+| **Provisioning** | `gaia-hpc` · `gaia-cloud` · `gaia-hybrid` · `gaia-agent-api` | at most one of `gaia-hpc`/`gaia-cloud`/`gaia-hybrid`; `gaia-agent-api` is independent |
 
 **Category** says what a repository *is*. **Relationship** says how it came to be here —
 `gaia-core` for work the project builds and maintains, or a rung of the ladder below for
@@ -56,8 +56,7 @@ started last month. **Provisioning** says where a repository's workflow runs —
 only axis a repository can skip entirely (a STAC catalog runs nowhere in particular) or, for
 `gaia-hybrid`, the only one recording that two backends (HPC and cloud) are used together in
 one pipeline rather than as alternatives. Full definitions, including why `gaia-hybrid` isn't
-just two independent tags, are in [the organisation
-page](https://gaia-hazlab.github.io/book/organization).
+just two independent tags, are in [the organisation page](https://gaia-hazlab.github.io/book/organization).
 
 `gaia-incubating` means exactly what it says — the interface may change without warning.
 Check the tag before you build on something.
