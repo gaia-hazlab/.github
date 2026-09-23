@@ -37,8 +37,8 @@ Fund for Future Science and Technology and the Jerome and Linda Paros Geohazard 
 
 ## How to read this organisation
 
-Twenty-five repositories is already too many to browse. Four GitHub topics on every public
-repository make the collection readable without anyone maintaining a list by hand.
+Twenty-five repositories is already too many to browse. At least four GitHub topics on every
+public repository make the collection readable without anyone maintaining a list by hand.
 
 | Axis | Values | Rule |
 |---|---|---|
@@ -46,12 +46,18 @@ repository make the collection readable without anyone maintaining a list by han
 | **Category** | `gaia-coordination` · `gaia-data` · `gaia-agent` · `gaia-eval` · `gaia-science` · `gaia-template` · `gaia-container` | exactly one |
 | **Relationship** | `gaia-core`, or `gaia-level-1` … `gaia-level-4` | exactly one |
 | **Maturity** | `gaia-stable` · `gaia-incubating` · `gaia-archived` | exactly one |
+| **Provisioning** | `gaia-hpc` · `gaia-cloud` · `gaia-hybrid` · `gaia-agent-api` | at most one of hpc/cloud/hybrid; `gaia-agent-api` is independent |
 
 **Category** says what a repository *is*. **Relationship** says how it came to be here —
 `gaia-core` for work the project builds and maintains, or a rung of the ladder below for
 software that joined from outside. **Maturity** exists because a list of repositories is not
 a recommendation: without it, a newcomer cannot tell established work from an experiment
-started last month.
+started last month. **Provisioning** says where a repository's workflow runs — it's the
+only axis a repository can skip entirely (a STAC catalog runs nowhere in particular) or, for
+`gaia-hybrid`, the only one recording that two backends (HPC and cloud) are used together in
+one pipeline rather than as alternatives. Full definitions, including why `gaia-hybrid` isn't
+just two independent tags, are in [the organisation
+page](https://gaia-hazlab.github.io/book/organization).
 
 `gaia-incubating` means exactly what it says — the interface may change without warning.
 Check the tag before you build on something.
@@ -59,7 +65,10 @@ Check the tag before you build on something.
 Browse by topic: [`gaia-data`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-data&type=repositories) ·
 [`gaia-agent`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-agent&type=repositories) ·
 [`gaia-science`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-science&type=repositories) ·
-[`gaia-stable`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-stable&type=repositories)
+[`gaia-stable`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-stable&type=repositories) ·
+[`gaia-hpc`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-hpc&type=repositories) ·
+[`gaia-cloud`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-cloud&type=repositories) ·
+[`gaia-hybrid`](https://github.com/search?q=org%3Agaia-hazlab+topic%3Agaia-hybrid&type=repositories)
 
 Existing repositories are tagged, never renamed — renaming breaks clones, bookmarks, and any
 URL already printed in a paper. New software products follow a naming convention
